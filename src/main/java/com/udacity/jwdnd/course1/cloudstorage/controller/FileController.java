@@ -53,7 +53,8 @@ public class FileController {
         }
 
         fileService.addFile(fileUpload, user.getUserId());
-        return "redirect:/result?success";
+        redirectAttributes.addFlashAttribute("successMessage", "Your File were uploaded successfully");
+        return "redirect:/home";
     }
 
     @GetMapping("/delete")

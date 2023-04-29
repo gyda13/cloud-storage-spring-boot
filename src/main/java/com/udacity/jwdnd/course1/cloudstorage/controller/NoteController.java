@@ -25,18 +25,22 @@ public class NoteController {
     }
 
     @PostMapping
-    public String AddUpdateNote(Authentication authentication, Note note){
+    public String AddUpdateNote(Authentication authentication, Note note, RedirectAttributes redirectAttributes){
         String loggedInUserName = (String) authentication.getPrincipal();
         User user = userMapper.getUser(loggedInUserName);
         Integer userId = user.getUserId();
 
         if (note.getNoteid() != null) {
             noteService.updateNote(note);
+            redirectAttributes.addFlashAttribute("successMessage", "Your Note were updated successfully");
+
         } else {
             noteService.addNote(note, userId);
+            redirectAttributes.addFlashAttribute("successMessage", "Your Note were created successfully");
+
         }
 
-        return "redirect:/result?success";
+        return "redirect:/home";
     }
 
     @GetMapping("/delete")
