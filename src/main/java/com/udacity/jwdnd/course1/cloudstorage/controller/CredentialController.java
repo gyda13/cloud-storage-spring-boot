@@ -31,7 +31,7 @@ public class CredentialController {
 
         if (credentials.getCredentialid() != null) {
             credentialsService.editCredentials(credentials);
-            redirectAttributes.addFlashAttribute("successMessage", "Your credentials were updated successfully");
+            redirectAttributes.addFlashAttribute("infoMessage", "Your credentials were updated successfully");
         } else {
             credentialsService.addCredentials(credentials, userId);
             redirectAttributes.addFlashAttribute("successMessage", "Your credentials were created successfully");
@@ -47,11 +47,11 @@ public class CredentialController {
 
         if(credentialId > 0){
             credentialsService.deleteCredentials(credentialId);
-            return "redirect:/result?success";
+            redirectAttributes.addFlashAttribute("actionMessage", "Your credentials were deleted.");
+            return "redirect:/home";
         }
 
-
-        redirectAttributes.addAttribute("error", "Unable to delete the credentials.");
-        return "redirect:/result?error";
+        redirectAttributes.addFlashAttribute("errorMessage", "Unable to delete the credentials.");
+        return "redirect:/home";
     }
 }

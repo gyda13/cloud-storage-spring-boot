@@ -32,7 +32,7 @@ public class NoteController {
 
         if (note.getNoteid() != null) {
             noteService.updateNote(note);
-            redirectAttributes.addFlashAttribute("successMessage", "Your Note were updated successfully");
+            redirectAttributes.addFlashAttribute("infoMessage", "Your Note were updated successfully");
 
         } else {
             noteService.addNote(note, userId);
@@ -47,11 +47,12 @@ public class NoteController {
     public String deleteNote(@RequestParam("id") int noteid, RedirectAttributes redirectAttributes){
         if(noteid > 0){
             noteService.deleteNote(noteid);
-            return "redirect:/result?success";
+            redirectAttributes.addFlashAttribute("actionMessage", "Your Note were deleted.");
+            return "redirect:/home";
         }
 
 
-        redirectAttributes.addAttribute("error", "Unable to delete the note.");
-        return "redirect:/result?error";
+        redirectAttributes.addFlashAttribute("errorMessage", "Unable to delete the note.");
+        return "redirect:/home";
     }
 }

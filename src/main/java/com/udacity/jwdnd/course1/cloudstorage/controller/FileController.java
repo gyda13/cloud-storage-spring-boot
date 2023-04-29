@@ -48,8 +48,8 @@ public class FileController {
         }
 
         if(uploadError!=null) {
-            redirectAttributes.addFlashAttribute("error", uploadError);
-            return "redirect:/result?error";
+            redirectAttributes.addFlashAttribute("errorMessage", uploadError);
+            return "redirect:/home";
         }
 
         fileService.addFile(fileUpload, user.getUserId());
@@ -61,12 +61,13 @@ public class FileController {
     public String deleteFile(@RequestParam("id") int fileid, Authentication authentication, RedirectAttributes redirectAttributes){
         if(fileid > 0){
             fileService.deleteFile(fileid);
-            return "redirect:/result?success";
+            redirectAttributes.addFlashAttribute("actionMessage", "Your File were deleted.");
+            return "redirect:/home";
         }
 
 
-        redirectAttributes.addAttribute("error", "Unable to delete the file.");
-        return "redirect:/result?error";
+        redirectAttributes.addFlashAttribute("errorMessage", "Unable to delete the file.");
+        return "redirect:/home";
     }
 
     @GetMapping("/download/{fileId}")
