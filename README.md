@@ -49,6 +49,7 @@ Using Selenium's driver to navigate the web, interact with elements on the page,
 ### Tests for User Signup, Login, and Unauthorized Access Restrictions
 
 ### Tests for Note Creation, Viewing, Editing, and Deletion
+
 ### Tests for Credential Creation, Viewing, Editing, and Deletion
 
 
