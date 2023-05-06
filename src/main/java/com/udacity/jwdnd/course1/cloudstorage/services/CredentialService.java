@@ -31,7 +31,7 @@ public class CredentialService {
         String encodedKey = Base64.getEncoder().encodeToString(key);
         String encryptedPassword = encryptionService.encryptValue(credential.getPassword(), encodedKey);
 
-        Credentials newCredentials = new Credentials();
+        Credentials newCredentials = new Credentials("","","");
         newCredentials.setUrl(credential.getUrl());
         newCredentials.setUsername(credential.getUsername());
         newCredentials.setKey(encodedKey);

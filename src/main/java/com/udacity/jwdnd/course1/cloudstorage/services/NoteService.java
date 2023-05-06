@@ -20,7 +20,7 @@ public class NoteService {
     }
 
     public void addNote(Note note, int userId){
-        Note newNote = new Note();
+        Note newNote = new Note("","");
         newNote.setUserid(userId);
         newNote.setNotedescription(note.getNotedescription());
         newNote.setNotetitle(note.getNotetitle());

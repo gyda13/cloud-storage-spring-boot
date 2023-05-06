@@ -9,6 +9,14 @@ public class Credentials {
     private String password;
     private Integer userid;
 
+    public Credentials(String url, String username, String password) {
+
+        this.url = url;
+        this.username = username;
+        this.password = password;
+
+    }
+
     public Integer getCredentialid() {
         return credentialid;
     }
