@@ -35,10 +35,11 @@ The back-end is all about security and connecting the front-end to database and 
 ## The Front-End
 
 ### Login and Signup Page
-https://user-images.githubusercontent.com/90142160/236632206-532ce35f-7339-497a-8210-a5247a66f28e.mov
+https://user-images.githubusercontent.com/90142160/236632969-e0af699c-b9fe-4a2b-8448-b57e18281b65.mov
+
 
 ### Home Page
-https://user-images.githubusercontent.com/90142160/236632637-dac6dca0-a840-4ac5-aa6a-58e70dd832d7.mov
+https://user-images.githubusercontent.com/90142160/236632986-668f16f2-1cc8-454b-b8da-5af15df044f1.mov
 
 
 
@@ -46,6 +47,7 @@ https://user-images.githubusercontent.com/90142160/236632637-dac6dca0-a840-4ac5-
 Using Selenium's driver to navigate the web, interact with elements on the page, and extract data from those elements, and using JUnit's assertions to check the data that is returned against expected values to verify user-facing functionality and prove that the code is feature-complete.
  
 ### Tests for User Signup, Login, and Unauthorized Access Restrictions
+
 ### Tests for Note Creation, Viewing, Editing, and Deletion
 ### Tests for Credential Creation, Viewing, Editing, and Deletion
 
