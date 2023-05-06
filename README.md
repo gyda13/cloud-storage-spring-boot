@@ -1,5 +1,5 @@
-# cloud-storage-spring-boot
-### SuperDuperDrive Cloud Storage
+# SuperDuperDrive Cloud Storage
+
 
 #### Udacity Java Web Developer Nanodegree - First Project
 #### [Starter Project](https://github.com/udacity/nd035-c1-spring-boot-basics-project-starter/tree/master/starter/cloudstorage)
