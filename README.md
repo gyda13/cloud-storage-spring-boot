@@ -1,7 +1,7 @@
 # cloud-storage-spring-boot
 ### SuperDuperDrive Cloud Storage
 
-#### Udacity Java web developer Nanodegree - first project
+#### Udacity Java Web Developer Nanodegree - First Project
 #### [Starter Project](https://github.com/udacity/nd035-c1-spring-boot-basics-project-starter/tree/master/starter/cloudstorage)
 
 ## User-facing features
@@ -17,7 +17,7 @@
 - The front-end with Thymeleaf</br>
 - Application tests with Selenium and JUnit</br>
 
-## The back-end
+## 🛠 The back-end
 The back-end is all about security and connecting the front-end to database and actions.
 
 ### Managing User Access with Spring Security
@@ -32,9 +32,9 @@ The back-end is all about security and connecting the front-end to database and 
 ### Making Calls to the Database with MyBatis Mappers
 - Implement MyBatis mapper interfaces for each of the model types. The mappers have methods that represent specific SQL queries and statements required.
 
-## The Front-End
+## 🖌 The Front-End
 
-### Login and Signup Page
+### Login and Signup Pages
 https://user-images.githubusercontent.com/90142160/236632969-e0af699c-b9fe-4a2b-8448-b57e18281b65.mov
 
 
@@ -43,14 +43,19 @@ https://user-images.githubusercontent.com/90142160/236632986-668f16f2-1cc8-454b-
 
 
 
-## Testing
+## 🧩 Testing
 Using Selenium's driver to navigate the web, interact with elements on the page, and extract data from those elements, and using JUnit's assertions to check the data that is returned against expected values to verify user-facing functionality and prove that the code is feature-complete.
  
-### Tests for User Signup, Login, and Unauthorized Access Restrictions
+### 1. Tests for User Signup, Login, and Unauthorized Access Restrictions
+https://user-images.githubusercontent.com/90142160/236633526-d20bc70e-85ff-4be5-80f4-9503eaa1c11f.mp4
 
-### Tests for Note Creation, Viewing, Editing, and Deletion
+### 2. Tests for Note Creation, Viewing, Editing, and Deletion
+https://user-images.githubusercontent.com/90142160/236633676-7aee0dab-5443-43eb-8b71-eef300e6f5e2.mp4
 
-### Tests for Credential Creation, Viewing, Editing, and Deletion
+### 3. Tests for Credential Creation, Viewing, Editing, and Deletion
+https://user-images.githubusercontent.com/90142160/236633661-5f298175-78c6-4d30-a8b3-bb6999cb7307.mp4
+
+
 
 
 
